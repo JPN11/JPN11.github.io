@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>JPN11's website - {% block title %}{% endblock %}</title>
+  <title>JPN11's website - Blog</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
   <link rel="stylesheet" href="styles.css">
 </head>
@@ -21,13 +21,13 @@
     <div class="container">
       <ul class="nav justify-content-center">
         <li class="nav-item">
-          <a class="nav-link active" href="index.html">Home</a>
+          <a class="nav-link" href="index.html">Home</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="about.html">About</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="blog.html">Blog</a>
+          <a class="nav-link active" href="blog.html">Blog</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="contact.html">Contact</a>
@@ -41,12 +41,20 @@
     <header class="text-white my-5">
       <h1 class="display-4">Welcome to my website</h1>
     </header>
+    <div class="row">
+      <div class="col-md-8">
+        <div class="card">
+          <div class="card-body text-main">
+            <h5 class="card-title text-main">Blog Post</h5>
+            <p class="card-text">This is a sample blog post. You can replace this with your own content.</p>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 
 
-  <div class="container">
-    {% block content %}{% endblock %}
-  </div>
+ 
 
   <footer class="text-center mt-5 py-3">
     <div class="container">
