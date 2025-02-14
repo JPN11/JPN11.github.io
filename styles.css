@@ -4,6 +4,17 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    background-image: url('images/code.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+text-box {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    margin: 20px 0;
+    color: black; /* Ensure text is visible */
 }
 text-main{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
