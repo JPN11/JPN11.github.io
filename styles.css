@@ -1,32 +1,45 @@
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: rgb(12, 1, 1);
+    color: #1a1a1a;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    background-image: url('images/code.jpeg');
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+                url('images/city_night.jpeg');
     background-size: cover;
-    background-repeat: no-repeat;
     background-position: center;
+    background-attachment: fixed;
+    line-height: 1.6;
 }
-text-box {
-    background-color: white;
-    padding: 20px;
-    border-radius: 5px;
-    margin: 20px 0;
-    color: black; /* Ensure text is visible */
+.text-box {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 2rem;
+    border-radius: 12px;
+    margin: 2rem 0;
+    color: #f5f5f5;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-text-main{
+
+.text-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+.text-main {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 24px;
-    color: black;
+    font-size: 1.5rem;
+    color: #121111;
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
 }
 
 .navbar {
-    background-color: rgb(91, 92, 97);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    padding: 1rem 0;
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    padding: 1.5rem 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 .navbar .nav-link {
@@ -50,12 +63,18 @@ text-main{
 }
 
 header {
-    padding: 4rem 0;
+    padding: 6rem 0;
+    text-align: center;
 }
 
 header h1 {
-    font-weight: bold;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-weight: 800;
+    font-size: 3.5rem;
+    background: linear-gradient(45deg, #00d2ff, #3a7bd5);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    margin-bottom: 1.5rem;
 }
 
 header p {
@@ -67,13 +86,24 @@ header p {
 .container {
     flex: 1;
 }
-text-blue{
-    color: rgb(91, 151, 230);
+.text-blue {
+    color: #00d2ff;
+    background: linear-gradient(45deg, #00d2ff, #3a7bd5);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-weight: 600;
 }
 footer {
-    background-color: rgb(91, 92, 97);
-    padding: 2rem 0;
+    background: rgba(0, 0, 0, 0.2);
+    padding: 2.5rem 0;
     margin-top: auto;
+    backdrop-filter: blur(10px);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+text-white {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #fff;
 }
 
 footer a {
